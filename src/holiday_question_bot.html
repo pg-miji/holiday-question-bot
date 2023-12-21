@@ -1,0 +1,25 @@
+<!-- 연말결산 질문 봇 -->
+<html>
+<head>
+    <title>연말결산 질문 봇</title>
+    <meta http-equiv="CONTENT-TYPE" content="text/html;charset=EUC-KR">
+    <link rel="icon" href="../public/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="../public/apple-icon-114x114.png" />
+    <link rel="shortcut icon" href="../public/android-icon-72x72.png" />
+    <link rel="stylesheet" href="./assets/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="./assets/main.js"></script>
+</head>
+<body>
+    <div id="welcome">
+        <div id="welcome_msg"></div>
+        <br>
+        <button type="button" id="start_btn" onclick="update_question();">START</button>
+    </div>
+    <div id="content">
+        <div id="question"></div>
+        <button type="button" id="past_btn" onclick="update_question('past');"></button>
+        <button type="button" id="future_btn" onclick="update_question('future');"></button>
+    </div>
+</body>
+</html>
